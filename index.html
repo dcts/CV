@@ -418,69 +418,7 @@
             <li>VanCamp</li>
           </ul> -->
 				</article>
-<style>
-  .selection-menu {
-    display: flex;
-    /*border:1px solid red;*/
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  .selection-left,
-  .selection-right {
-    width: 160px;
-    height: 40px;
-    border: 1px solid rgba(255,255,255,0.5);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.35s ease;
-  }
-  .selection-left > h3,
-  .selection-right > h3 {
-    margin: 0;
-  }
-  .selection-left {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-  }
-  .selection-right {
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-  }
-  .selection-left.active,
-  .selection-right.active {
-    background-color: rgba(255,255,255,0.8);
-  }
-  .selection-left.active > h3,
-  .selection-right.active > h3 {
-    color: #191d21;
-  }
-  .hide {
-    visibility: collapse;
-    height: 0px;
-    padding: 0px !important;
-    margin: 0px !important;
-  }
-</style>
 
-
-<script>
-  const selectMenu = (choice) => {
-    if (choice === "work") {
-      document.querySelector(".selection-left").classList.add("active");
-      document.querySelector(".selection-right").classList.remove("active");
-      document.querySelector(".timeline-education").classList.add("hide");
-      document.querySelector(".timeline-work").classList.remove("hide");
-    } else if (choice === "education") {
-      document.querySelector(".selection-left").classList.remove("active");
-      document.querySelector(".selection-right").classList.add("active");
-      document.querySelector(".timeline-work").classList.add("hide");
-      document.querySelector(".timeline-education").classList.remove("hide");
-    }
-  };
-</script>
 				<!-- CV -->
 				<article id="cv">
 					<h2 class="major">CV</h2>
@@ -729,7 +667,7 @@ i {
 }
 .event-date {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 17px;
   margin-bottom: 7px;
 }
 .timeline-event>* {
@@ -737,10 +675,10 @@ i {
 }
 .event-name {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
 }
 .event-description {
-  font-size: 15px;
+  font-size: 17px;
   color: #757575;
 }
 .gallery-item, .timeline-event>* {
@@ -754,3 +692,68 @@ i {
   position: relative;
 }
 </style>
+
+
+<!-- CV -->
+<style>
+  .selection-menu {
+    display: flex;
+    /*border:1px solid red;*/
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .selection-left,
+  .selection-right {
+    width: 180px;
+    height: 45px;
+    border: 1px solid rgba(255,255,255,0.5);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.35s ease;
+  }
+  .selection-left > h3,
+  .selection-right > h3 {
+    margin: 0;
+  }
+  .selection-left {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .selection-right {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .selection-left.active,
+  .selection-right.active {
+    background-color: rgba(255,255,255,0.8);
+  }
+  .selection-left.active > h3,
+  .selection-right.active > h3 {
+    color: #191d21;
+  }
+  .hide {
+    visibility: collapse;
+    height: 0px;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+</style>
+
+<script>
+  const selectMenu = (choice) => {
+    if (choice === "work") {
+      document.querySelector(".selection-left").classList.add("active");
+      document.querySelector(".selection-right").classList.remove("active");
+      document.querySelector(".timeline-education").classList.add("hide");
+      document.querySelector(".timeline-work").classList.remove("hide");
+    } else if (choice === "education") {
+      document.querySelector(".selection-left").classList.remove("active");
+      document.querySelector(".selection-right").classList.add("active");
+      document.querySelector(".timeline-work").classList.add("hide");
+      document.querySelector(".timeline-education").classList.remove("hide");
+    }
+  };
+</script>
