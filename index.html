@@ -173,7 +173,7 @@
                 <h3>Demo</h3>
               </div>
               <div class="right-section">
-                <img class="laptop-preview" width="600px" src="images/previews/laptop-liist.png" alt="">
+                <img class="laptop-preview" width="400px" src="images/previews/laptop-liist.png" alt="">
               </div>
             </div>
           </div>
@@ -223,7 +223,7 @@
                 <h3>Demo</h3>
               </div>
               <div class="right-section">
-                <img class="laptop-preview" width="600px" src="images/previews/laptop-reko.png" alt="">
+                <img class="laptop-preview" width="400px" src="images/previews/laptop-reko.png" alt="">
               </div>
             </div>
           </div>
@@ -236,7 +236,7 @@
                 <h3>About</h3>
               </div>
               <div class="right-section">
-                <p>Worlds fastest cryptocurrency portfolio tracker. Super slim, fast loadtimes. "Portfolio creation" user-story is still in development. Connects to own firestore database, where all cryptocurrency prices are stored.</p>
+                <p>Worlds fastest cryptocurrency portfolio tracker. Super slim, fast loadtimes. "Portfolio creation" user-story is still in development. Connects to own firestore database, where all cryptocurrency prices are stored (price updates every 5 minutes).</p>
               </div>
             </div>
             <div class="flex">
@@ -258,6 +258,14 @@
               <div class="right-section">
                 <a href="http://www.coinrocketapp.com/" target="_blank"><div class="tooltip"><i class="fas fa-globe"></i><span class="tooltiptext">website</span></div></a>
                 <a href="https://github.com/dcts/coinrocketapp.com" target="_blank"><div class="tooltip"><i class="fab fa-github"></i></i><span class="tooltiptext">source code</span></div></a>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="left-section">
+                <h3>Demo</h3>
+              </div>
+              <div class="right-section">
+                <img class="laptop-preview" width="280px" src="images/previews/phone-coinrocket.png" alt="">
               </div>
             </div>
           </div>
@@ -304,15 +312,7 @@
                 <h3>About</h3>
               </div>
               <div class="right-section">
-                <p>Game for creative founders. Pitch a random startup idea in just 22 seconds.</p>
-              </div>
-            </div>
-            <div class="flex">
-              <div class="left-section">
-                <h3>Role</h3>
-              </div>
-              <div class="right-section">
-                <p>Build as side project during leWagon coding bootcamp in april 2018.</p>
+                <p>Game for creative founders. Pitch a random startup idea in just 22 seconds. Build as side project during leWagon coding bootcamp in april 2018.</p>
               </div>
             </div>
             <div class="flex">
@@ -356,7 +356,7 @@
 
 
 
-          <!-- PROJECT INFO TEMPLATE -->
+          <!-- PROJECT INFO p2pchat -->
           <div class="project-info" data-title="p2pchat">
             <div class="flex">
               <div class="left-section">
@@ -391,7 +391,7 @@
                 <h3>Demo</h3>
               </div>
               <div class="right-section">
-                <img class="laptop-preview" width="600px" src="images/previews/laptop-p2pchat.png" alt="">
+                <img class="laptop-preview" width="400px" src="images/previews/laptop-p2pchat.png" alt="">
               </div>
             </div>
           </div>
@@ -418,12 +418,115 @@
             <li>VanCamp</li>
           </ul> -->
 				</article>
+<style>
+  .selection-menu {
+    display: flex;
+    /*border:1px solid red;*/
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .selection-left,
+  .selection-right {
+    width: 160px;
+    height: 40px;
+    border: 1px solid rgba(255,255,255,0.5);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.35s ease;
+  }
+  .selection-left > h3,
+  .selection-right > h3 {
+    margin: 0;
+  }
+  .selection-left {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .selection-right {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .selection-left.active,
+  .selection-right.active {
+    background-color: rgba(255,255,255,0.8);
+  }
+  .selection-left.active > h3,
+  .selection-right.active > h3 {
+    color: #191d21;
+  }
+  .hide {
+    visibility: collapse;
+    height: 0px;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+</style>
 
+
+<script>
+  const selectMenu = (choice) => {
+    if (choice === "work") {
+      document.querySelector(".selection-left").classList.add("active");
+      document.querySelector(".selection-right").classList.remove("active");
+      document.querySelector(".timeline-education").classList.add("hide");
+      document.querySelector(".timeline-work").classList.remove("hide");
+    } else if (choice === "education") {
+      document.querySelector(".selection-left").classList.remove("active");
+      document.querySelector(".selection-right").classList.add("active");
+      document.querySelector(".timeline-work").classList.add("hide");
+      document.querySelector(".timeline-education").classList.remove("hide");
+    }
+  };
+</script>
 				<!-- CV -->
 				<article id="cv">
 					<h2 class="major">CV</h2>
-					<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-					<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+
+          <div class="selection-menu">
+            <div class="selection-left active" onclick="selectMenu('work')">
+              <h3>Work</h3>
+            </div>
+            <div class="selection-right" onclick="selectMenu('education')">
+              <h3>Education</h3>
+            </div>
+          </div>
+          <div class="timeline timeline-work">
+            <div class="timeline-event te-primary">
+                <span class="event-date">2018/07 - Now</span>
+                <span class="event-name">Liist.cc</span>
+                <span class="event-description">Co-Founder, Database Engineer and Webdeveloper</span>
+            </div>
+            <div class="timeline-event te-primary">
+                <span class="event-date">2016/03 - Now</span>
+                <span class="event-name">Center for Philanthrophy Studies (Basel/CH)</span>
+                <span class="event-description">MySql Database Engineer (40%)</span>
+            </div>
+            <div class="timeline-event te-primary">
+                <span class="event-date">2016/08 - 2017/01</span>
+                <span class="event-name">University of Basel</span>
+                <span class="event-description">Assisance in Computational Science (30%)</span>
+            </div>
+          </div>
+          <div class="timeline timeline-education hide">
+            <div class="timeline-event te-primary">
+                <span class="event-date">2018/04 - 2018/06</span>
+                <span class="event-name">Le Wagon Fullstack Coding Bootcamp</span>
+                <span class="event-description">Berlin, Batch #244</span>
+            </div>
+            <div class="timeline-event te-primary">
+                <span class="event-date">2014/09 - 2018/02</span>
+                <span class="event-name">M.Sc. in Economics, Major in Quantitative Methods</span>
+                <span class="event-description">University of Basel</span>
+            </div>
+            <div class="timeline-event te-primary">
+                <span class="event-date">2011/09 - 2017/01</span>
+                <span class="event-name">B.Sc. in Economics</span>
+                <span class="event-description">University of Basel</span>
+            </div>
+          </div>
 				</article>
 
 			</div><!-- END: Main -->
@@ -599,5 +702,55 @@
 }
 i {
   font-size: 35px;
+}
+</style>
+
+
+<style>
+.timeline-event {
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+.timeline-event:before {
+  background-color: #3aa8db;
+  position: absolute;
+  top: 0;
+  left: -9px;
+  width: 7px;
+  height: 7px;
+  border: 5px solid #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  content: " ";
+}
+.event-date {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+.timeline-event>* {
+  display: block;
+}
+.event-name {
+  font-weight: 500;
+  font-size: 18px;
+}
+.event-description {
+  font-size: 15px;
+  color: #757575;
+}
+.gallery-item, .timeline-event>* {
+  display: block;
+}
+.timeline {
+  border-left: 1px solid #eaeaea;
+  padding: 30px 0;
+}
+.section, .speciality-icon, .timeline, .timeline-event {
+  position: relative;
 }
 </style>
