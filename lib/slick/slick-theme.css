@@ -217,3 +217,61 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
   right: -5px;
   top: 0px;
 }
+
+.project-card-cover-img {
+  border-radius: 20px;
+  object-fit: cover;
+}
+.project-card-title {
+  text-align: center;
+}
+
+.slick-arrow {
+  color: inherit;
+  box-shadow: none !important;
+}
+.slick-arrow:before {
+  color: white !important;
+}
+.slider {
+  width: 50%;
+  max-width: 450px;
+  margin: 100px auto
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .1;
+}
+
+.slick-active {
+  opacity: .2;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+div:focus,
+video:focus {
+  outline: 0px;
+}
+.slick-dots li {
+  opacity: 0.3;
+}
+.slick-dots li.slick-active {
+  opacity: 1;
+}
