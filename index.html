@@ -44,40 +44,52 @@
 
 			<!-- Main -->
 			<div id="main">
-
+<style>
+  .skills-flex {
+    display: flex;
+    justify-content: space-around;
+  }
+</style>
 				<!-- Skills -->
 				<article id="skills">
 					<h2 class="major">Skills</h2>
-					<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-					<h4>Web</h4>
-          <ul>
-            <li>HTML5, CSS3, JS</li>
-            <li>libraries: jQuery, p5.js, chart.js</li>
-            <li>Ruby On Rails</li>
-          </ul>
-          <h4>Database</h4>
-          <ul>
-            <li>SQL (MySQL / PostgreSQL)</li>
-            <li>Firestore (NoSql Database)</li>
-            <li>Holochain distributed architecture</li>
-          </ul>
-          <h4>Web Scraping</h4>
-          <ul>
-            <li>Selenium (with Java or Ruby)</li>
-          </ul>
-          <h4>Languages</h4>
-          <ul>
-            <li>Ruby</li>
-            <li>Java (+ Processing)</li>
-            <li>Javascript</li>
-            <li>MATLAB</li>
-          </ul>
-          <h4>For Productivity I use</h4>
-          <ul>
-            <li>Git + Github</li>
-            <li>Notion</li>
-            <li>Slack</li>
-          </ul>
+          <div class="skills-flex">
+
+            <div class="skills-left">
+  				    <h3>Web</h3>
+              <ul>
+                <li>HTML5, CSS3, JS</li>
+                <li>libraries: jQuery, p5.js, chart.js</li>
+                <li>Ruby On Rails</li>
+              </ul>
+              <h3>Scraping</h3>
+              <ul>
+                <li>Selenium (with Java or Ruby)</li>
+                <li>Nokogiri</li>
+              </ul>
+              <h3>Languages</h3>
+              <ul>
+                <li>Ruby</li>
+                <li>Java (+ Processing)</li>
+                <li>Javascript</li>
+                <li>MATLAB</li>
+              </ul>
+            </div>
+            <div class="skills-right">
+              <h3>Database</h3>
+              <ul>
+                <li>SQL (MySQL / PostgreSQL)</li>
+                <li>Firestore (NoSql Database)</li>
+                <li>Holochain distributed architecture</li>
+              </ul>
+              <h3>Productivity</h3>
+              <ul>
+                <li>Git + Github</li>
+                <li>Notion</li>
+                <li>Slack</li>
+              </ul>
+            </div>
+          </div>
 				</article>
 
 				<!-- Projects -->
@@ -667,7 +679,7 @@ i {
 }
 .event-date {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 19px;
   margin-bottom: 7px;
 }
 .timeline-event>* {
@@ -675,10 +687,10 @@ i {
 }
 .event-name {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
 }
 .event-description {
-  font-size: 17px;
+  font-size: 19px;
   color: #757575;
 }
 .gallery-item, .timeline-event>* {
