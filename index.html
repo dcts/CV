@@ -44,16 +44,7 @@
 
 			<!-- Main -->
 			<div id="main">
-<style>
-  .skills-flex {
-    display: flex;
-    justify-content: space-around;
-  }
-  .slider-container {
-    max-width: 580px;
-    margin: 0 auto;
-  }
-</style>
+
 				<!-- Skills -->
 				<article id="skills">
 					<h2 class="major">Skills</h2>
@@ -122,7 +113,7 @@
                 <img class="project-card-cover-img" width="200" src="images/project-cards/bullpitch.png">
               </div>
               <div class="projects-slide" data-title="p2pchat">
-                <h3 class="project-card-title">p2p chat</h3>
+                <h3 class="project-card-title">p2pChat</h3>
                 <img class="project-card-cover-img" width="200" src="images/project-cards/a-chat.png">
               </div>
               <!-- <div class="projects-slide" data-title="talksmart">
@@ -242,7 +233,7 @@
                 <h3>Demo</h3>
               </div>
               <div class="right-section">
-                <img class="laptop-preview" width="400px" src="images/previews/laptop-reko.png" alt="">
+                <img class="laptop-and-mobile-preview" src="images/previews/laptop-and-mobile-reko-1.png" alt="">
               </div>
             </div>
           </div>
@@ -284,7 +275,7 @@
                 <h3>Demo</h3>
               </div>
               <div class="right-section">
-                <img class="laptop-preview" width="280px" src="images/previews/phone-coinrocket.png" alt="">
+                <img class="mobile-preview" src="images/previews/phone-coinrocket.png" alt="">
               </div>
             </div>
           </div>
@@ -361,14 +352,7 @@
                 <h3>Demo</h3>
               </div>
               <div class="right-section">
-                <div class="smartphone">
-                  <div class="content">
-                    <video width="320" height="570" controls>
-                      <source src="videos/bullpitch-howto.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video>
-                  </div>
-                </div>
+                <img class="laptop-and-mobile-preview" src="images/previews/laptop-and-mobile-bullpitch.png" alt="">
               </div>
             </div>
           </div>
@@ -410,7 +394,7 @@
                 <h3>Demo</h3>
               </div>
               <div class="right-section">
-                <img class="laptop-preview" width="400px" src="images/previews/laptop-p2pchat.png" alt="">
+                <img class="laptop-preview" src="images/previews/laptop-p2pchat.png" alt="">
               </div>
             </div>
           </div>
@@ -513,9 +497,32 @@
     <!-- SLICK SLIDER (+jquery dependency) -->
     <script src="lib/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
 	</body>
-
-
 </html>
+
+<style>
+  .laptop-and-mobile-preview {
+    width: 100%;
+    margin-left: -45px;
+  }
+  .mobile-preview {
+    width: 100%;
+    max-width: 400px;
+    margin-left: -15px;
+  }
+  .laptop-preview {
+    width: 100%;
+    max-width: 800px;
+    margin-left: -45px;
+  }
+  .skills-flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  .slider-container {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+</style>
 
 <script type="text/javascript">
   let projectsTabOpened = false;
