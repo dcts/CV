@@ -942,8 +942,12 @@ i {
     }
   };
 
-  let host = "dcts.github.io"
-  if (window.location.host == host && window.location.protocol != "https:") {
+  const currentHost = window.location.host;
+  const matchesHost = [
+    "dcts.github.io",
+    "dcts.dev",
+  ].some(host => currentHost === host);
+  if (matchesHost && window.location.protocol != "https:") {
     window.location.protocol = "https:"
   }
 </script>
