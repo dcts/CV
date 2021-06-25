@@ -599,20 +599,13 @@
 
 <script type="text/javascript">
 
-  console.log("hi");
-  console.log("DOM IS READY");
   const content = buildSliderItems();
-  console.log(content);
   document.querySelector(".projects-slider").innerHTML = content;
 
-
   // let projectsTabOpened = location.href.includes("#projects");
-  // console.log("hi2");
   function moveToSlide() {
-    // if (projectsTabOpened === false) {
-      $(".projects-slider").slick("slickGoTo", "0");
-      projectsTabOpened = true;
-    // }
+    $(".projects-slider").slick("slickGoTo", "0");
+    projectsTabOpened = true;
   };
 
   let projectsSlider;
@@ -948,4 +941,9 @@ i {
       document.querySelector(".timeline-education").classList.remove("hide");
     }
   };
+
+  let host = "dcts.github.io"
+  if (window.location.host == host && window.location.protocol != "https:") {
+    window.location.protocol = "https:"
+  }
 </script>
