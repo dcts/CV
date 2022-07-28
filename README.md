@@ -7,3 +7,7 @@ This is my personal portfolio website, containing my tech-stack, projects and CV
 ### Credits
 
 Template DIMENSION by HTML5UP.
+
+### Inspo
+- landing pagea and effects: https://imchr.is/
+- projects cards: 
