@@ -10,4 +10,5 @@ Template DIMENSION by HTML5UP.
 
 ### Inspo
 - landing pagea and effects: https://imchr.is/
+- landing page fluid simulation: https://www.youtube.com/watch?v=ke86owugYPI
 - projects cards: 
